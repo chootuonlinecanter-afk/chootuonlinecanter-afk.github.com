@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhotu Online Center & Cyber Cafe</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        /* Welcome Section */
+        .welcome-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .welcome-box h2 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        /* Services Grid */
+        .services-title {
+            text-align: center;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid #2a5298;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #1e3c72;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+        .card ul {
+            list-style-type: none;
+        }
+        .card ul li {
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #1e3c72;
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .btn-call {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .btn-call:hover {
+            background: #219653;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Chhotu Online Center</h1>
+        <p>Aapki Sabhi Online Suvidhaayein, Ab Ek Hi Jagah!</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Welcome Note -->
+        <div class="welcome-box">
+            <h2>Humein Chunein, Samay Bachayein!</h2>
+            <p>Hum bohot hi kam samay aur kifayati daam me sabhi tarah ke sarkari aur gair-sarkari online forms, certificate apply aur computer se jude kaam bharosemand tarike se karte hain.</p>
+        </div>
+
+        <!-- Services Section -->
+        <h2 class="services-title">Hamari Tezi Se Hone Wali Services</h2>
+        <div class="grid">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>Sarkari Documents</h3>
+                <ul>
+                    <li>Naya PAN Card / Correction</li>
+                    <li>Aadhaar Card Download & Print</li>
+                    <li>Ration Card Online Apply</li>
+                    <li>Voter ID Card Online</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>Form & Board Jobs</h3>
+                <ul>
+                    <li>Sarkari Naukri (Latest Govt. Jobs) Form</li>
+                    <li>School / College Admission Form</li>
+                    <li>Exam Admit Card Download</li>
+                    <li>Result Check & Printout</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Banking & Bill Payments</h3>
+                <ul>
+                    <li>Bijli Bill (Electricity) Jama Karein</li>
+                    <li>Mobile & DTH Recharge</li>
+                    <li>Money Transfer (Paise Bhejna/Nikalna)</li>
+                    <li>Pramaan Patra (Aay, Jati, Niwas)</li>
+                </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <h3>Computer & Xerox</h3>
+                <ul>
+                    <li>High-Quality Xerox (Photo Copy)</li>
+                    <li>Color Passport Size Photo (5 Minutes)</li>
+                    <li>Lamination aur Spiral Binding</li>
+                    <li>Typing aur Resume/CV Making</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Humse Sampark Karein (Contact Us)</h2>
+            <div class="contact-info">
+                <p><strong>Pata (Address):</strong>  MIRZACHEUKI, Sahibganj, Jharkhand/ Jharkhand</p>
+                <p><strong>Dukaan Khulne Ka Samay:</strong> Subah 09:00 Baje se Shaam 08:00 Baje tak (Raviwar Band)</p>
+                <p><strong>Mobile Number:</strong> +91 6299357802</p>
+                <a href="tel:+916299357802" class="btn-call">Abhi Call Karein</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Chhotu Online Center. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
